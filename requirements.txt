@@ -6,3 +6,4 @@ python-dotenv
 requests
 langchain-community
 langchain_groq
+langchain.text_splitter
