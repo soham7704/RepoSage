@@ -1,6 +1,6 @@
 import os
-from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 def get_vectorstore(chunks):
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
