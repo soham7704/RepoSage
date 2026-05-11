@@ -8,6 +8,7 @@ from vectorstore_utils import get_vectorstore, load_vectorstore
 from qa_utils import ask_question
 from qa_chain import get_direct_llm
 from dotenv import load_dotenv
+load_dotenv()
 
 try:
     groq_api_key = st.secrets["GROQ_API_KEY"]
