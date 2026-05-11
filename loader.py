@@ -1,5 +1,5 @@
 from langchain_core.documents import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 RELEVANT_EXTENSIONS = [".py", ".ipynb", ".html", ".css", ".js", ".toml",".md", ".txt", ".json", ".yml"]
 
