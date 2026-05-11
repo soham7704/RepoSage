@@ -1,6 +1,6 @@
 import streamlit as st
-from langchain_community.chains import ConversationalRetrievalChain
-from langchain_community.memory import ConversationBufferMemory
+from langchain.chains import ConversationalRetrievalChain
+from langchain.memory import ConversationBufferMemory
 
 def ask_question(retriever, question, chat_history):
     if "llm" not in st.session_state or st.session_state.llm is None:
