@@ -1,4 +1,5 @@
 import streamlit as st
+from langchain_community.chains import ConversationalRetrievalChain
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 
