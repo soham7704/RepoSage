@@ -7,3 +7,4 @@ requests
 langchain-community
 langchain_groq
 langchain.text_splitter
+pip install --upgrade pip
