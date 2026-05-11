@@ -9,9 +9,12 @@ from qa_utils import ask_question
 from qa_chain import get_direct_llm
 from dotenv import load_dotenv
 
-# Fetch Groq API key from streamlit secrets
-if not st.secrets["GROQ_API_KEY"]:
-    st.error("Error: groq_api_key not found in environment variables. Please set it in your .env file.")
+try:
+    groq_api_key = st.secrets["GROQ_API_KEY"]
+    if not groq_api_key:
+        raise ValueError("Empty key")
+except Exception:
+    st.error("GROQ_API_KEY not found. Add it to .streamlit/secrets.toml or Streamlit Cloud Secrets.")
     st.stop()
 
 # Load GitHub icon
